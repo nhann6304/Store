@@ -86,7 +86,6 @@
     right: 0;
     width: 58%;
     height: 8px;
-
 }
 
 
@@ -906,6 +905,10 @@
 
 }
 
+.app_content {
+    padding-top: 36px;
+}
+
 .container__category {
     background-color: var(--white-color);
     border-radius: 2px;
@@ -916,6 +919,7 @@
     font-size: 1.3rem;
     padding: 12px 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 0;
 }
 
 .category_heading-icon {
@@ -965,4 +969,90 @@
 .category-item__link:hover {
     right: -4px;
     color: var(--primary-color);
+}
+
+/* Home sort filter khung lọc sản phẩm */
+
+.home-filter {
+    background-color: rgba(0, 0, 0, 0.04);
+    display: flex;
+    padding: 12px 22px;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.home-filter__label {
+    font-size: 0.9rem;
+    color: #555555;
+    margin-right: 16px;
+}
+
+.home-filter__btn {
+    min-width: 90px;
+    margin-right: 12px;
+}
+
+.home-filter__page {
+    display: flex;
+    align-items: center;
+}
+
+.select-input__label {
+    font-size: 1rem;
+}
+
+.select-input__icon {
+    font-size: 0.9rem;
+    color: rgb(131, 131, 131);
+    top: 1px;
+}
+
+.home-filter__page {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__num {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__current {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control {
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+}
+
+.home-filter__page-btn {
+    display: flex;
+    flex: 1;
+    background-color: var(--white-color);
+    text-decoration: none;
+}
+
+.home-filter__page-btn-disabled {
+    cursor: default;
+    background-color: #f9f9f9;
+}
+
+.home-filter__page-btn-disabled .home-filter__page-icon {
+    color: #ccc;
+}
+
+.home-filter__page-btn:first-child {
+    border-right: 1px solid #eee;
+}
+
+.home-filter__page-icon {
+    margin: auto;
+    font-size: 0.8rem;
+    color: #555;
 }

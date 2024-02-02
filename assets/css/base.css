@@ -169,3 +169,57 @@ p {
     cursor: default;
     background-color: #c3c3c3;
 }
+
+/* Slection option */
+
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 22px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+}
+
+.select-input__list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    /* background-color: black; */
+    top: -8px;
+    right: 0;
+    width: 100%;
+    height: 8px;
+}
+
+.select-input__link {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+    font-weight: 500;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
